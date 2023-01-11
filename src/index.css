@@ -1,13 +1,81 @@
-body {
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  font-family: "Poppins", sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.completed {
+  text-decoration: line-through;
+  opacity: 0.5;
+}
+
+.listContainer{
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
+.listContainer ul {
+  list-style: none;
+}
+
+.listContainer li {
+  display: inline;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.checkBox{
+  text-decoration: none;
+  border: none;
+}
+.trashButton {
+  text-decoration: none;
+  border: none;
+}
+
+header{
+  display: block;
+}
+
+header,
+form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+form input {
+  padding: 0.5rem;
+  font-size: 1rem;
+  background-color: white;
+}
+
+.alert {
+  min-height: 5vh;
+  display: flex;
+  justify-content: center;
+}
+
+.alert-success{
+  background-color: lightgreen;
+  padding-top: 5px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 5px;
+}
+
+.alert-danger{
+  background-color: lightcoral;
+  padding-top: 5px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 5px;
+}
+
+.editing {
+  color: red;
 }
